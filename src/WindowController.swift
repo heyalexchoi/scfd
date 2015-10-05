@@ -25,7 +25,7 @@ class WindowController {
     
     func presentHome() {
         
-        let vc = ViewController()
+        let vc = HomeViewController()
         vc.tabBarItem = UITabBarItem(title: "Main", image: nil, selectedImage: nil)
         
         let viewControllers = [vc].map { return UINavigationController(rootViewController: $0) }

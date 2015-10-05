@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170E71661BC2F1C9007F2938 /* SoundCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170E71651BC2F1C9007F2938 /* SoundCloud.swift */; };
 		171638E31BC2463F00D5EE25 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171638E11BC2463F00D5EE25 /* OMGHTTPURLRQ.framework */; };
 		171638E41BC2463F00D5EE25 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171638E21BC2463F00D5EE25 /* PromiseKit.framework */; };
 		171638E61BC256E500D5EE25 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171638E51BC256E500D5EE25 /* Private.swift */; };
+		172839BE1BC2F8570090A550 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172839BD1BC2F8570090A550 /* TrackTableViewCell.swift */; };
 		17ACA4F31BBF9745002C20AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACA4F21BBF9745002C20AA /* AppDelegate.swift */; };
-		17ACA4F51BBF9745002C20AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACA4F41BBF9745002C20AA /* ViewController.swift */; };
-		17ACA4F81BBF9745002C20AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ACA4F61BBF9745002C20AA /* Main.storyboard */; };
+		17ACA4F51BBF9745002C20AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACA4F41BBF9745002C20AA /* HomeViewController.swift */; };
 		17ACA4FA1BBF9745002C20AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ACA4F91BBF9745002C20AA /* Assets.xcassets */; };
 		17ACA4FD1BBF9745002C20AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ACA4FB1BBF9745002C20AA /* LaunchScreen.storyboard */; };
 		17ACA5081BBF9745002C20AA /* SCFDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACA5071BBF9745002C20AA /* SCFDTests.swift */; };
@@ -44,13 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170E71651BC2F1C9007F2938 /* SoundCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloud.swift; sourceTree = "<group>"; };
 		171638E11BC2463F00D5EE25 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMGHTTPURLRQ.framework; path = Carthage/Build/iOS/OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
 		171638E21BC2463F00D5EE25 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		171638E51BC256E500D5EE25 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		172839BD1BC2F8570090A550 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 		17ACA4EF1BBF9745002C20AA /* SCFD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCFD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ACA4F21BBF9745002C20AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17ACA4F41BBF9745002C20AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17ACA4F71BBF9745002C20AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17ACA4F41BBF9745002C20AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17ACA4F91BBF9745002C20AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ACA4FC1BBF9745002C20AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ACA4FE1BBF9745002C20AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170E71671BC2F2B7007F2938 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				17ACA4F41BBF9745002C20AA /* HomeViewController.swift */,
+				172839BD1BC2F8570090A550 /* TrackTableViewCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		17ACA4E61BBF9744002C20AA = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				17ACA5301BC1B851002C20AA /* Extensions */,
-				17ACA5201BC1B544002C20AA /* WindowController.swift */,
 				17ACA5221BC1B581002C20AA /* Appearance.swift */,
+				17ACA5201BC1B544002C20AA /* WindowController.swift */,
 				17ACA4F21BBF9745002C20AA /* AppDelegate.swift */,
-				17ACA4F41BBF9745002C20AA /* ViewController.swift */,
+				170E71671BC2F2B7007F2938 /* Home */,
+				170E71651BC2F1C9007F2938 /* SoundCloud.swift */,
 				171638E51BC256E500D5EE25 /* Private.swift */,
 				17ACA5311BC1B866002C20AA /* Assets */,
 			);
@@ -177,7 +189,6 @@
 		17ACA5311BC1B866002C20AA /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				17ACA4F61BBF9745002C20AA /* Main.storyboard */,
 				17ACA4F91BBF9745002C20AA /* Assets.xcassets */,
 				17ACA4FB1BBF9745002C20AA /* LaunchScreen.storyboard */,
 				17ACA4FE1BBF9745002C20AA /* Info.plist */,
@@ -291,7 +302,6 @@
 			files = (
 				17ACA4FD1BBF9745002C20AA /* LaunchScreen.storyboard in Resources */,
 				17ACA4FA1BBF9745002C20AA /* Assets.xcassets in Resources */,
-				17ACA4F81BBF9745002C20AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17ACA5251BC1B6D0002C20AA /* UIView+AutoLayout.swift in Sources */,
-				17ACA4F51BBF9745002C20AA /* ViewController.swift in Sources */,
+				17ACA4F51BBF9745002C20AA /* HomeViewController.swift in Sources */,
+				170E71661BC2F1C9007F2938 /* SoundCloud.swift in Sources */,
+				172839BE1BC2F8570090A550 /* TrackTableViewCell.swift in Sources */,
 				17ACA5211BC1B544002C20AA /* WindowController.swift in Sources */,
 				17ACA4F31BBF9745002C20AA /* AppDelegate.swift in Sources */,
 				17ACA5231BC1B581002C20AA /* Appearance.swift in Sources */,
@@ -380,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17ACA4F61BBF9745002C20AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17ACA4F71BBF9745002C20AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17ACA4FB1BBF9745002C20AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

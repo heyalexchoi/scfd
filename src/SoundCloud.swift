@@ -1,10 +1,11 @@
 //
-//  ViewController.swift
+//  SoundCloud.swift
 //  SCFD
 //
-//  Created by Alex Choi on 10/3/15.
+//  Created by Alex Choi on 10/5/15.
 //  Copyright © 2015 CHOI. All rights reserved.
 //
+
 
 import UIKit
 import SoundCloudKit
@@ -12,7 +13,7 @@ import SwiftyJSON
 import PromiseKit
 import Alamofire
 
-
+typealias Track = SoundCloudKit.Track
 
 struct SoundCloud {
     
@@ -80,33 +81,6 @@ struct SoundCloud {
             }
         }
     }
-    
-}
-
-class ViewController: UIViewController {
-    
-    let soundCloud = SoundCloud()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        soundCloud.fetchUser("mindslime")
-        .then { user in
-            return self.soundCloud.fetchUserFavorites(user)
-        }
-        .then { (favorites) -> Promise<String> in
-            print(favorites.map { $0.user.username + $0.title })
-            let first = favorites.first!
-            return self.soundCloud.downloadFile(first.streamUrl, fileName: first.user.username + first.title)
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
 }
 
