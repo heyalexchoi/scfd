@@ -1,0 +1,2 @@
+github "Spincoaster/SoundCloudKit" ~> 0.1.1
+github "heyalexchoi/PromiseKit" "swift-2.0-beta5"
