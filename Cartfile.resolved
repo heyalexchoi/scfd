@@ -1,6 +1,8 @@
 github "Alamofire/Alamofire" "2.0.2"
 github "kumabook/Breit" "0.1.0"
+github "ViccAlexander/Chameleon" "2.0.4"
 github "mxcl/OMGHTTPURLRQ" "3.0.0"
 github "SwiftyJSON/SwiftyJSON" "3b5d0d4e0c19173b1bf0dc823bde25ad870f70c0"
+github "Alamofire/AlamofireImage" "1.1.2"
 github "heyalexchoi/PromiseKit" "c90cfc1c578ed09b5d3d21e0ac71aa5020be0899"
 github "Spincoaster/SoundCloudKit" "0.1.1"

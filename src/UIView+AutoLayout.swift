@@ -32,6 +32,13 @@ extension UIView {
             addSubview(view)
         }
     }
+    
+    func addSubviewsWithAutoLayout(views: [UIView]) {
+        for view in views {
+            view.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(view)
+        }
+    }
     /** Applies left inset to leading, and right inset to trailing */
     func anchorAllEdgesToView(view: UIView, insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
         leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: insets.left).active = true

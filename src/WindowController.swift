@@ -28,7 +28,10 @@ class WindowController {
         let vc = HomeViewController()
         vc.tabBarItem = UITabBarItem(title: "Main", image: nil, selectedImage: nil)
         
-        let viewControllers = [vc].map { return UINavigationController(rootViewController: $0) }
+        let swatch = SwatchViewController()
+        swatch.tabBarItem = UITabBarItem(title: "Swatch", image: nil, selectedImage: nil)
+        
+        let viewControllers = [vc, swatch].map { return UINavigationController(rootViewController: $0) }
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = viewControllers

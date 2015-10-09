@@ -25,6 +25,9 @@
 		17ACA52B1BC1B76F002C20AA /* Breit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ACA5271BC1B76F002C20AA /* Breit.framework */; };
 		17ACA52C1BC1B76F002C20AA /* SoundCloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ACA5281BC1B76F002C20AA /* SoundCloudKit.framework */; };
 		17ACA52D1BC1B76F002C20AA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ACA5291BC1B76F002C20AA /* SwiftyJSON.framework */; };
+		17EA64F51BC746B10023C789 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EA64F41BC746B10023C789 /* AlamofireImage.framework */; };
+		17EA64F71BC747660023C789 /* SwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA64F61BC747660023C789 /* SwatchViewController.swift */; };
+		17EA64FA1BC769280023C789 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EA64F91BC769280023C789 /* Chameleon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		17ACA5271BC1B76F002C20AA /* Breit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Breit.framework; path = Carthage/Build/iOS/Breit.framework; sourceTree = "<group>"; };
 		17ACA5281BC1B76F002C20AA /* SoundCloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SoundCloudKit.framework; path = Carthage/Build/iOS/SoundCloudKit.framework; sourceTree = "<group>"; };
 		17ACA5291BC1B76F002C20AA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		17EA64F41BC746B10023C789 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		17EA64F61BC747660023C789 /* SwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwatchViewController.swift; sourceTree = "<group>"; };
+		17EA64F91BC769280023C789 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 				17ACA52B1BC1B76F002C20AA /* Breit.framework in Frameworks */,
 				17ACA52C1BC1B76F002C20AA /* SoundCloudKit.framework in Frameworks */,
 				17ACA52D1BC1B76F002C20AA /* SwiftyJSON.framework in Frameworks */,
+				17EA64F51BC746B10023C789 /* AlamofireImage.framework in Frameworks */,
+				17EA64FA1BC769280023C789 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +147,7 @@
 				17ACA5221BC1B581002C20AA /* Appearance.swift */,
 				17ACA5201BC1B544002C20AA /* WindowController.swift */,
 				17ACA4F21BBF9745002C20AA /* AppDelegate.swift */,
+				17EA64F81BC747690023C789 /* Swatch */,
 				170E71671BC2F2B7007F2938 /* Home */,
 				170E71651BC2F1C9007F2938 /* SoundCloud.swift */,
 				171638E51BC256E500D5EE25 /* Private.swift */,
@@ -168,6 +177,8 @@
 		17ACA52F1BC1B844002C20AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17EA64F91BC769280023C789 /* Chameleon.framework */,
+				17EA64F41BC746B10023C789 /* AlamofireImage.framework */,
 				171638E11BC2463F00D5EE25 /* OMGHTTPURLRQ.framework */,
 				171638E21BC2463F00D5EE25 /* PromiseKit.framework */,
 				17ACA5261BC1B76F002C20AA /* Alamofire.framework */,
@@ -194,6 +205,14 @@
 				17ACA4FE1BBF9745002C20AA /* Info.plist */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		17EA64F81BC747690023C789 /* Swatch */ = {
+			isa = PBXGroup;
+			children = (
+				17EA64F61BC747660023C789 /* SwatchViewController.swift */,
+			);
+			name = Swatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +353,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SoundCloudKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/OMGHTTPURLRQ.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -350,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17ACA5251BC1B6D0002C20AA /* UIView+AutoLayout.swift in Sources */,
+				17EA64F71BC747660023C789 /* SwatchViewController.swift in Sources */,
 				17ACA4F51BBF9745002C20AA /* HomeViewController.swift in Sources */,
 				170E71661BC2F1C9007F2938 /* SoundCloud.swift in Sources */,
 				172839BE1BC2F8570090A550 /* TrackTableViewCell.swift in Sources */,

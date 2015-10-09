@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     
     var tracks = [Track]()
     
+    let prototypeCell = TrackTableViewCell()
     let cellIdentifier = "cellIdentifier"
     
     override func viewDidLoad() {
@@ -24,11 +25,11 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         title = "Home"
         
-        tableView.backgroundColor = Color.backgroundColor
+        tableView.backgroundColor = Color.Background.value
         tableView.registerClass(TrackTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = 80
+        tableView.rowHeight = 90
         
         view.addSubviewsWithAutoLayout(tableView)
         view.addConstraintsWithVisualFormatStrings([
@@ -72,5 +73,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.prepare(track)
         return cell
     }
+    
 }
 
